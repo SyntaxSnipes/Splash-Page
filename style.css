@@ -70,7 +70,7 @@ html,body
 }
 .firstsecmain i{
   font-size: 0.9em;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .parawall{
@@ -139,7 +139,7 @@ html,body
 
   .firstsecmain i{
     font-size: 0.8em;
-    font-weight: 600;
+    font-weight: 500;
   }
   .parawall p{
     font-size: 0.75em;
@@ -639,7 +639,7 @@ html,body
 .quote{
   font-size: 3em;
   color: #1f2937;
-  font-weight: lighter;
+  font-weight: 200;
   font-style: italic;
 
 }
@@ -660,7 +660,7 @@ html,body
   .quote{
     font-size: 2.25em;
     color: #1f2937;
-    font-weight: lighter;
+    font-weight: 200;
     font-style: italic;
   
   }
