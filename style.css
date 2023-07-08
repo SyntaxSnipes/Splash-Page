@@ -175,7 +175,7 @@ html,body
   .parawall h2{
     font-size: 2.25em;
     color: #f9faf8;
-    font-weight: lighter;
+    font-weight: 300;
     padding-bottom: 3.5%;
   }
   .parawall p{
@@ -185,7 +185,7 @@ html,body
   .fbutton {
     background-color: #3882f6;
     color: #e5e7eb;
-    font-weight: bold;
+    font-weight: 500;
     font-size: 0.55em;
     padding: 0.75% 1%;
     border-radius: 7px;
@@ -201,13 +201,13 @@ html,body
   .parawall h2{
     font-size: 1.85em;
     color: #f9faf8;
-    font-weight: lighter;
+    font-weight: 300;
     padding-bottom: 3.5%;
   }
 
   .firstsecmain i{
     font-size: 0.725em;
-    font-weight: bold;
+    font-weight: 500;
   }
   .parawall p{
     font-size: 0.55em;
@@ -242,13 +242,13 @@ html,body
   .parawall h2{
     font-size: 1.75em;
     color: #f9faf8;
-    font-weight: lighter;
+    font-weight: 300;
     padding-bottom: 3.5%;
   }
 
   .firstsecmain i{
     font-size: 0.72em;
-    font-weight: bold;
+    font-weight: 500;
   }
   .parawall p{
     font-size: 0.45em;
@@ -306,7 +306,7 @@ html,body
   .parawall h2{
     font-size: 1.8em;
     color: #f9faf8;
-    font-weight: lighter;
+    font-weight: 300;
     padding-bottom: 2.5%;
     text-align: center;
   }
@@ -314,7 +314,7 @@ html,body
   .firstsecmain i{
     text-align: center;
     font-size: 1.3em;
-    font-weight: bold;
+    font-weight: 500;
   }
 
   .parawall p{
@@ -639,7 +639,7 @@ html,body
 .quote{
   font-size: 3em;
   color: #1f2937;
-  font-weight: 200;
+  font-weight: 300;
   font-style: italic;
 
 }
@@ -648,6 +648,7 @@ html,body
   font-size: 1.35em;
   text-align: end;
   padding-right: 5%;
+  font-weight: 400;
 }
 
 .quoteauthor i{
@@ -660,7 +661,7 @@ html,body
   .quote{
     font-size: 2.25em;
     color: #1f2937;
-    font-weight: 200;
+    font-weight: 300;
     font-style: italic;
   
   }
@@ -669,6 +670,7 @@ html,body
     font-size: 1em;
     text-align: end;
     padding-right: 5%;
+    font-weight: 400;
   }
   
 }
@@ -685,7 +687,7 @@ html,body
   .quote{
     font-size: 1.5em;
     color: #1f2937;
-    font-weight: lighter;
+    font-weight: 300;
     font-style: italic;
     padding-bottom: 3%;
   
@@ -695,6 +697,7 @@ html,body
     font-size: 0.85em;
     text-align: end;
     padding-right: 5%;
+    font-weight: 400;
   }
   
 }
