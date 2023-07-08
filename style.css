@@ -4,6 +4,15 @@
   padding: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
 
 /* SECTION 1 */
 
@@ -12,33 +21,38 @@
 }
 
 .logonav{
+  position: fixed;
+  z-index: 5;
+  width: 100vw;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 1% 3%;
+  padding: 1% 0%;
   background-color: #141821;
-}
-
-.top h3{
   color: #f9faf8;
-  font-size: 150%;
 }
-
-
+.logonav h3 {
+  padding-left: 5%;
+  font-size: 1em;
+}
 .headerlinks{
   color: #e5e7eb;
-  padding-right: 3%;
+  padding-right: 5%;
+  display: flex;
+  font-size: 0.75em;
 }
 .headerlinks a:hover{
   color: #3882f6;
 }
 .headerlinks a{
-  margin-right: 10px;
+  flex-wrap: nowrap;
+  margin-right: 1em;
   text-decoration: none;
   color: #f9faf8;
 }
 
+/**/
 
 .firstsecmain{
   display: flex;
@@ -49,13 +63,13 @@
 
 }
 .parawall h2{
-  font-size: 3.5em;
+  font-size: 3em;
   color: #f9faf8;
   font-weight: lighter;
   padding-bottom: 3.5%;
 }
 .firstsecmain i{
-  font-size: 110%;
+  font-size: 0.9em;
   font-weight: bold;
 }
 
@@ -67,19 +81,23 @@
 
 
 .parawall p{
-  font-size: 120%;
+  font-size: 1em;
   color: #e5e7eb;
 }
 
+
+
 #firstimg{
+  margin-top: 5%;
+  margin: 8%;
   height: auto;
-  width: 30%;
-  margin: 4%;
-  border-radius: 6%;
+  width: 18.75em;
+  height: auto;
+  border-radius: 7%;
   transition: transform 0.4s ease-out;
 }
 #firstimg:hover{
-  transform: scale(1.25);
+  transform: scale(1.15);
   transition: transform 0.6s ease-in-out;
 }
 
@@ -87,17 +105,234 @@
   background-color: #3882f6;
   color: #e5e7eb;
   font-weight: bold;
-  height: 25px;
-  width: 77.5px;
+  font-size: 0.7em;
+  padding: 1% 1.5%;
   border-radius: 7px;
   margin-top: 2.5%;
-  
+  align-items: flex-start;
+  width: 27.5%;
 }
+
 .fbutton:hover{
   background-color: #e5e7eb;
   color: #3882f6;
 }
 
+.fbutton:active {
+  background-color: #3882f6;
+  color:#e5e7eb;
+}
+
+
+@media all and (max-width: 875px){
+  .parawall h2{
+    font-size: 2.5em;
+    color: #f9faf8;
+    font-weight: lighter;
+    padding-bottom: 3.5%;
+  }
+
+  .firstsecmain i{
+    font-size: 0.8em;
+    font-weight: bold;
+  }
+  .parawall p{
+    font-size: 0.75em;
+    color: #e5e7eb;
+  }
+  .fbutton {
+    background-color: #3882f6;
+    color: #e5e7eb;
+    font-weight: bold;
+    font-size: 0.6em;
+    padding: 0.75% 1%;
+    border-radius: 7px;
+    margin-top: 5%;
+    align-items: flex-start;
+    width: 30%;
+    height: auto;
+  }
+  #firstimg{
+    height: auto;
+    width: 30%;
+    margin: 4%;
+    border-radius: 7.5%;
+    transition: transform 0.4s ease-out;
+  }
+  #firstimg:hover{
+    transform: scale(1.1);
+    transition: transform 0.6s ease-in-out;
+  }
+}
+
+
+@media all and (max-width: 650px){
+  .parawall h2{
+    font-size: 2.25em;
+    color: #f9faf8;
+    font-weight: lighter;
+    padding-bottom: 3.5%;
+  }
+  .parawall p{
+    font-size: 0.7em;
+    color: #e5e7eb;
+  }
+  .fbutton {
+    background-color: #3882f6;
+    color: #e5e7eb;
+    font-weight: bold;
+    font-size: 0.55em;
+    padding: 0.75% 1%;
+    border-radius: 7px;
+    margin-top: 2.5%;
+    align-items: flex-start;
+    width: 32.5%;
+    height: auto;
+  }
+  
+}
+
+@media all and (max-width: 580px){
+  .parawall h2{
+    font-size: 1.85em;
+    color: #f9faf8;
+    font-weight: lighter;
+    padding-bottom: 3.5%;
+  }
+
+  .firstsecmain i{
+    font-size: 0.725em;
+    font-weight: bold;
+  }
+  .parawall p{
+    font-size: 0.55em;
+    color: #e5e7eb;
+  }
+  .fbutton {
+    background-color: #3882f6;
+    color: #e5e7eb;
+    font-weight: bold;
+    font-size: 0.5em;
+    padding: 0.75% 1%;
+    border-radius: 7px;
+    margin-top: 2.5%;
+    align-items: flex-start;
+    width: 35%;
+    height: auto;
+  }
+  #firstimg{
+    height: auto;
+    width: 30%;
+    margin: 4%;
+    border-radius: 7.5%;
+    transition: transform 0.4s ease-out;
+  }
+  #firstimg:hover{
+    transform: scale(1.1);
+    transition: transform 0.6s ease-in-out;
+  }
+}
+
+@media all and (max-width: 475px){
+  .parawall h2{
+    font-size: 1.75em;
+    color: #f9faf8;
+    font-weight: lighter;
+    padding-bottom: 3.5%;
+  }
+
+  .firstsecmain i{
+    font-size: 0.72em;
+    font-weight: bold;
+  }
+  .parawall p{
+    font-size: 0.45em;
+    color: #e5e7eb;
+  }
+  .fbutton {
+    background-color: #3882f6;
+    color: #e5e7eb;
+    font-weight: bold;
+    font-size: 0.5em;
+    padding: 0.75% 1%;
+    border-radius: 7px;
+    margin-top: 2.5%;
+    align-items: flex-start;
+    width: 35%;
+    height: auto;
+  }
+  #firstimg{
+    height: auto;
+    width: 30%;
+    margin: 4%;
+    border-radius: 7.5%;
+    transition: transform 0.4s ease-out;
+  }
+  #firstimg:hover{
+    transform: scale(1.05);
+    transition: transform 0.6s ease-in-out;
+  }
+}
+
+
+@media all and (max-width: 445px) {
+  .firstsecmain{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-content: space-around;
+    padding: 12.5% 0%;
+  
+  }
+  #firstimg{
+    width: 10em;
+    height: auto;
+    margin: 3%;
+    border-radius: 7.5%;
+    transition: transform 0.4s ease-out;
+  }
+  .parawall{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10% 1%;
+  }
+  .parawall h2{
+    font-size: 1.8em;
+    color: #f9faf8;
+    font-weight: lighter;
+    padding-bottom: 2.5%;
+    text-align: center;
+  }
+
+  .firstsecmain i{
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: bold;
+  }
+
+  .parawall p{
+    font-size: 0.875em;
+    color: #e5e7eb;
+    text-align: center;
+    padding: 5% 0%;
+
+  }
+
+  .fbutton {
+    background-color: #3882f6;
+    color: #e5e7eb;
+    font-weight: bold;
+    font-size: 0.5em;
+    padding: 1% 1.25%;
+    border-radius: 5px;
+    margin-top: 2.5%;
+    width: 125px;
+  }
+
+  
+}
 
 
 /* SECTION 2 */
@@ -110,11 +345,13 @@
   margin-bottom: 4%;
   justify-content: space-between;
 
+
 }
 .sectwocontent{
   display: flex;
   flex-direction: row;
   align-items: center;
+
 }
 #overlaypic{
   position: relative;
@@ -129,7 +366,7 @@
 #gc{
   position: relative;
   z-index: 1;
-  top:40%;
+  top:45%;
   width: 95%;
   height: auto;
   border-radius: 5%;
@@ -145,7 +382,7 @@
 
 #side{
   position: absolute;
-  top: -7.5%;
+  top: -5.75%;
   left: 3%;
   z-index: 2;
   width: 50%;
@@ -168,27 +405,216 @@
 }
 
 .funclist{
+  padding-left: 1%;
+  flex-grow: 2;
+  flex-shrink: 5;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  padding-left: 1%;
-  flex-grow: 2;
-  flex-shrink: 5;
 }
 
-.funclist li a{
+
+
+.funclist li a {
   font-style: oblique;
-  font-size: 155%;
+  font-size: 2vw;
   display: flex;
   flex-direction: row;
   text-align: start;
   margin: 8% 2%;
-  width: 175%;
 }
 
 .funclist li a:hover{
   color: #3882f6;
+}
+
+@media all and (max-width: 1000px){
+
+
+  #overlaypic{
+    position: unset;
+    padding: unset;
+    margin-left: unset;
+    margin-right: unset;
+    box-sizing: unset;
+    width: unset;
+    height: unset;
+  }
+  .sectiontwo{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1%;
+    padding-top: 3%;
+    margin-bottom: 4%;
+    justify-content: space-evenly;
+  }
+
+  .sectwocontent{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+
+  
+  #gc{
+    width: 0px;
+    height: auto;
+    border-radius: 5%;
+    transition: transform 0.7s ease-out;
+    position: unset;
+    z-index: unset;
+    top:unset;
+  }
+  
+  
+  #side{
+    width: 15em;
+    height: auto;
+    border-radius: 5%;
+    position: unset;
+    top: unset;
+    left: unset;
+    z-index: unset;
+    transition: transform 0.7s ease-out;
+    }
+
+    #side:hover{
+      transform:scale(1.05);
+      transition: transform 0.5s ease-in-out;
+    }
+  
+  .sectiontwo h3{
+    align-items: center;
+    justify-self: center;
+    text-align: center;
+    font-size: 2em;
+    color: #1f2937;
+    font-weight: bolder;
+    margin-bottom: 2.5%;
+  }
+  
+  .funclist{
+    padding-left: 3%;
+    display: flex;
+    flex-basis: auto;
+    flex-grow: 0.5;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 300px;
+  }
+  
+  .funclist ul{
+    display: flex;
+    width: 300px;
+  }
+  
+  
+  .funclist li a {
+    font-style: oblique;
+    font-size: 2vw;
+    display: flex;
+    flex-direction: row;
+    text-align: start;
+    margin: 3% 0.5%;
+  }
+
+}
+
+@media all and (max-width: 500px){
+  #overlaypic{
+    position: unset;
+    padding: unset;
+    margin-left: unset;
+    margin-right: unset;
+    box-sizing: unset;
+    width: unset;
+    height: unset;
+  }
+  .sectiontwo{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1%;
+    padding-top: 5%;
+    margin-top: 5%;
+    margin-bottom: 8%;
+    justify-content: space-evenly;
+  }
+
+  .sectwocontent{
+    padding: 0.75%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+
+  
+  #gc{
+    width: 0px;
+    height: auto;
+    border-radius: 5%;
+    transition: transform 0.7s ease-out;
+    position: unset;
+    z-index: unset;
+    top:unset;
+  }
+  
+  
+  #side{
+    width: 8.5em;
+    height: auto;
+    border-radius: 5%;
+    position: unset;
+    top: unset;
+    left: unset;
+    z-index: unset;
+    transition: transform 0.7s ease-out;
+    }
+
+    #side:hover{
+      transform:scale(1.05);
+      transition: transform 0.5s ease-in-out;
+    }
+  
+  .sectiontwo h3{
+    align-items: center;
+    justify-self: center;
+    text-align: center;
+    font-size: 1.5em;
+    color: #1f2937;
+    font-weight: bolder;
+    padding-bottom: 4.5%;
+  }
+  
+  .funclist{
+    padding-left: 5%;
+    display: flex;
+    flex-basis: auto;
+    flex-grow: 0.5;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 300px;
+  }
+  
+  .funclist ul{
+    display: flex;
+    width: 300px;
+  }
+  
+  
+  .funclist li a {
+    font-style: oblique;
+    font-size: 0.8em;
+    display: flex;
+    flex-direction: row;
+    text-align: start;
+    margin: 3% 0.5%;
+  }
+
 }
 
 
@@ -206,7 +632,7 @@
 }
 
 .quote{
-  font-size: 45px;
+  font-size: 3em;
   color: #1f2937;
   font-weight: lighter;
   font-style: italic;
@@ -214,7 +640,7 @@
 }
 
 .quoteauthor {
-  font-size: 24px;
+  font-size: 1.35em;
   text-align: end;
   padding-right: 5%;
 }
@@ -222,6 +648,50 @@
 .quoteauthor i{
   font-weight: lighter;
   font-style: italic;
+}
+
+
+@media all and (max-width: 785px) {
+  .quote{
+    font-size: 2.25em;
+    color: #1f2937;
+    font-weight: lighter;
+    font-style: italic;
+  
+  }
+
+  .quoteauthor {
+    font-size: 1em;
+    text-align: end;
+    padding-right: 5%;
+  }
+  
+}
+
+@media all and (max-width: 450px) {
+  .sectionthree {
+    display: flex;
+    background-color: #e5e7eb;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 12% 7%;
+  }
+  .quote{
+    font-size: 1.5em;
+    color: #1f2937;
+    font-weight: lighter;
+    font-style: italic;
+    padding-bottom: 3%;
+  
+  }
+
+  .quoteauthor {
+    font-size: 0.85em;
+    text-align: end;
+    padding-right: 5%;
+  }
+  
 }
 
 /* SECTION 4 */
@@ -250,13 +720,14 @@
   color: #e5e7eb;
 }
 .cta h5 {
-  font-size: 18px;
+  font-size: 1.1em;
 }
 .sbutton{
   background-color: #3882f6;
+  font-size: 0.7em;
   color: #e5e7eb;
-  height: 25px;
-  width: 77.5px;
+  height: 2em;
+  width: 7em;
   border-radius: 7px;
   font-weight: bold;
   border: 1.2px solid #e5e7eb;
@@ -268,14 +739,69 @@
   
 }
 
+@media all and (max-width: 825px) {
+  .ctabut{
+    padding: 6% 8.5%;
+    border-radius: 10px;
+    background-color: #3882f6;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .cta h5 {
+    font-size: 1em;
+  }
+
+  .cta p {
+    font-size: 0.7em;
+  }
+
+}
+
+@media all and (max-width: 450px) {
+  .ctabut{
+    padding: 5% 7%;
+    border-radius: 10px;
+    background-color: #3882f6;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 10px;
+    align-items: center;
+  }
+  .cta h5 {
+    font-size: 0.8em;
+  }
+
+  .cta p {
+    font-size: 0.6em;
+  }
+
+}
+
+
+
 footer {
   display: flex;
   background-color: #1f2937;
   color: #e5e7eb;
   justify-content: center;
   align-items: center;
-  padding: 1% ;
+  padding: 1%;
+  text-align: center;
 }
 
+@media all and (max-width: 825px) {
+  footer {
+    font-size: 0.75em;
+  }
 
+}
 
+@media all and (max-width: 450px) {
+  footer {
+    font-size: 0.4em;
+  }
+
+}

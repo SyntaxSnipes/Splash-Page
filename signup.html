@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - ISS</title>
+</head>
+<link rel="stylesheet" href="signup.css">
+<body>
+    <div class="logonav">
+        <h3>M:IB 08</h3>
+        <div class="headerlinks">
+            <a href="index.html">Home</a>
+            <a href="https://www.ispr.gov.pk/">Pakistani Homebase</a>
+        </div>
+    </div>
+    <div id = "main">
+    <img src="images\Pakistan_ISI_Logo.png" alt="">
+    <h1>Sign Up</h1>
+    <p>Sign Up for the M:IB 08 AI Robot. Please enter your credentials so we can get in touch with you.</p>
+    <span id="credentials">
+    <h3>Email:</h3>
+    <input type="email" name="email" id="email" placeholder="Enter Email">
+    <h3>Password:</h3>
+    <input type="password" name="pass" id="pass" placeholder="Enter Password">
+    <h3>Re-enter Password:</h3>
+    <input type="password" name="repass" id="repass" placeholder="Re-enter Password">
+    </span>
+    <p id = "userWarning"></p>
+    <button id="createAccBtn" onclick="createAcc()">Create account</button>
+    <p id = "userMsg"></p>
+    <script src="signup.js"></script>
+    </div>
+</body>
+</html>
