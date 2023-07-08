@@ -65,7 +65,7 @@ html,body
 .parawall h2{
   font-size: 3em;
   color: #f9faf8;
-  font-weight: lighter;
+  font-weight: 300;
   padding-bottom: 3.5%;
 }
 .firstsecmain i{
@@ -123,7 +123,7 @@ html,body
   color:#e5e7eb;
 }
 
-@media all and (max-width: 1200px){
+@media all and (min-width: 1200px){
   .fbutton{
     font-size: 0.8em;
   }

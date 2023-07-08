@@ -18,7 +18,10 @@ body{
     padding: 1% 0%;
     background-color: #141821;
     color: #f9faf8;
-      
+.logonav h3 {
+        padding-left: 5%;
+        font-size: 1em;
+}
 }
 .headerlinks{
     color: #e5e7eb;
