@@ -44,7 +44,7 @@ body{
   
 
 h1 {
-    font-size: 2.75vw;
+    font-size: 2.85vw;
     text-align: center;
     animation: swooshDownAndEnlarge 1s ease-in-out forwards;
     transform-origin: top;
@@ -58,7 +58,7 @@ h1 {
     }
     100% {
       opacity: 1;
-      transform: translateY(15px) scale(1.275);
+      transform: translateY(15px) scale(1.325);
     }
 
 }
