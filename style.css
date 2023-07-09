@@ -362,7 +362,6 @@ html,body
     background-size: cover;
     background-color: rgb(155, 155, 155);
     background-blend-mode: multiply;
-    background-attachment: fixed;
     
 
   
@@ -937,7 +936,6 @@ html,body
     padding: 70% 7.5%;
     background-image: url("images/ibrahaicollage");
     background-size: 25%;
-    background-attachment: fixed;
     gap: 5px;
   
   }
