@@ -33,6 +33,7 @@
     border: 0;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
     font-family: SFRegular, Helvetica;
 }
 
@@ -59,7 +60,7 @@ body{
   .logonav h3 {
     font-family: SFBold;
     padding-left: 5%;
-    font-size: 1.2em;
+    font-size: 1.25em;
     margin-top: 0% 0%;
   }
   .headerlinks{
@@ -86,7 +87,8 @@ body{
     display: none;
   }
 h1 {
-    font-size: 2.25em;
+    font-size: 3em;
+    text-decoration: underline;
     text-align: center;
     animation: swooshDownAndEnlarge 1s ease-in-out forwards;
     transform-origin: top;
@@ -147,7 +149,8 @@ h1 {
 
 @media all and (max-width: 885px) {
     h1{
-        font-size: 1.7em;
+        font-size: 2em;
+        text-decoration: underline;
     }
     .reviewsection {
         width: 100vw;
@@ -192,6 +195,7 @@ h1 {
 @media all and (max-width: 500px) {
     h1 {
         font-size: 1.85em;
+        text-decoration: underline;
         text-align: center;
         animation: swooshDownAndEnlarge 1s ease-in-out forwards;
         transform-origin: top;
@@ -250,6 +254,29 @@ h1 {
     }
 }
 @media all and (max-width: 445px) {
+    h1 {
+        text-decoration: underline;
+        width: 100%;
+        font-size: 117.5%;
+        padding: 0% 2.5%;
+        text-align: center;
+        margin-bottom: 10%;
+        animation: swooshDownAndEnlarge 1s ease-in-out forwards;
+        transform-origin: top;
+        opacity: 0;
+    }
+      
+      @keyframes swooshDownAndEnlarge {
+        0% {
+          opacity: 0;
+          transform: translateY(-50%) scale(0.5);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(17.5px) scale(1.2);
+        }
+    
+    }
     .headerlinks #flat{
         display: none;
         }
