@@ -1,8 +1,39 @@
+@font-face {
+    font-family: SFMedium;
+    src: url(fonts/SFPRODISPLAYMEDIUM.OTF);
+  }
+  @font-face {
+    font-family: SFItalicHeavy;
+    src: url(fonts/SFPRODISPLAYHEAVYITALIC.OTF);
+  }
+  @font-face {
+    font-family: SFBold;
+    src: url(fonts/SFPRODISPLAYBOLD.OTF);
+  }
+  @font-face {
+    font-family: SFItalicLight;
+    src: url(fonts/SFPRODISPLAYLIGHTITALIC.OTF);
+  }
+  @font-face {
+    font-family: SFRegular;
+    src: url(fonts/SFPRODISPLAYREGULAR.OTF);
+  }
+  
+  @font-face {
+    font-family: SFUltraLightItalic;
+    src: url(fonts/SFPRODISPLAYULTRALIGHTITALIC.OTF);
+  }
+  
+  @font-face {
+    font-family: SFThinItalic;
+    src: url(fonts/SFPRODISPLAYTHINITALIC.OTF);
+  }
+  
 * {
     border: 0;
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
+    font-family: SFRegular, Helvetica;
 }
 
 body{
@@ -13,8 +44,10 @@ body{
     background-color:#e5e7eb;
     color:#1f2937;
 }
+
 .logonav{
     width: 100vw;
+    height: 25px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -23,28 +56,37 @@ body{
     background-color: #141821;
     color: #f9faf8;
   }
-.logonav h3 {
+  .logonav h3 {
+    font-family: SFBold;
     padding-left: 5%;
-    font-size: 1em;
-}
-.headerlinks{
+    font-size: 1.2em;
+    margin-top: 0% 0%;
+  }
+  .headerlinks{
     color: #e5e7eb;
-    padding-right: 3%;
     display: flex;
+    padding-right: 2%;
     font-size: 0.75em;
-}
-.headerlinks a:hover{
+  }
+  .headerlinks a:hover{
     color: #3882f6;
-}
-.headerlinks a{
-    margin-right: 10px;
+  }
+  .headerlinks a{
+    font-family: SFRegular;
+    flex-wrap: nowrap;
+    margin-right: 1em;
     text-decoration: none;
     color: #f9faf8;
-}
+  }
+  .dropdown {
+    display: none;
+  }
   
-
+  .dropdown-menu{
+    display: none;
+  }
 h1 {
-    font-size: 2.85vw;
+    font-size: 2.25em;
     text-align: center;
     animation: swooshDownAndEnlarge 1s ease-in-out forwards;
     transform-origin: top;
@@ -74,20 +116,18 @@ h1 {
     margin-bottom: 10%;
 }
 .reviewsection h3{
-    font-style: italic;
-    font-weight: 350;
+    font-family: SFItalicLight;
     font-size: 2.35vw;
 }
 
 .reviewsection p {
-    font-style: oblique;
-    font-weight: 400;
-    font-size: 1.35vw;
+    font-family: SFThinItalic;
+    font-size: 1.45vw;
 }
 
 #r1, #r3, #r5{
-    padding-right: 1vw;
-    padding-left: 0.5vw;
+    padding-right: 1.5em;
+    padding-left: 1em;
     display: flex;
     flex-direction: column;
     align-self: flex-end;
@@ -96,7 +136,7 @@ h1 {
 }
 
 #r2, #r4, #r6{
-    padding-right: 0.5vw;
+    padding-right: 1.5em;
     padding-left: 1vw;
     display: flex;
     flex-direction: column;
@@ -106,6 +146,9 @@ h1 {
 }
 
 @media all and (max-width: 885px) {
+    h1{
+        font-size: 1.7em;
+    }
     .reviewsection {
         width: 100vw;
         margin-top: 10%;
@@ -116,20 +159,18 @@ h1 {
         margin-bottom: 10%;
     }
     .reviewsection h3{
-        font-style: italic;
-        font-weight: 350;
+        font-family: SFItalicLight;
         font-size: 1.8em;
     }
     
     .reviewsection p{
-        font-style: oblique;
-        font-weight: 400;
+        font-family: SFThinItalic;
         font-size: 1.35vw;
     }
     
     #r1, #r3, #r5{
-        padding-right: 1vw;
-        padding-left: 0.5vw;
+        padding-right: 1em;
+        padding-left: 1em;
         display: flex;
         flex-direction: column;
         align-self: flex-end;
@@ -138,8 +179,8 @@ h1 {
     }
     
     #r2, #r4, #r6{
-        padding-right: 0.5vw;
-        padding-left: 1vw;
+        padding-right: 1em;
+        padding-left: 1em;
         display: flex;
         flex-direction: column;
         align-self: flex-start;
@@ -150,7 +191,7 @@ h1 {
 }
 @media all and (max-width: 500px) {
     h1 {
-        font-size: 0.8em;
+        font-size: 1.85em;
         text-align: center;
         animation: swooshDownAndEnlarge 1s ease-in-out forwards;
         transform-origin: top;
@@ -178,20 +219,18 @@ h1 {
         margin-bottom: 10%;
     }
     .reviewsection h3{
-        font-style: italic;
-        font-weight: 350;
+        font-family: SFItalicLight;
         font-size: 1.8em;
     }
     
     .reviewsection p{
-        font-style: oblique;
-        font-weight: 400;
+        font-family: SFThinItalic;
         font-size: 1em;
     }
     
     #r1, #r3, #r5{
-        padding-right: 1vw;
-        padding-left: 0.5vw;
+        padding-right: 0.75em;
+        padding-left: 0.5em;
         display: flex;
         flex-direction: column;
         align-self: center;
@@ -200,8 +239,8 @@ h1 {
     }
     
     #r2, #r4, #r6{
-        padding-right: 0.5vw;
-        padding-left: 1vw;
+        padding-right: 0.75em;
+        padding-left: 0.5em;
         display: flex;
         flex-direction: column;
         align-self: center;
@@ -210,13 +249,75 @@ h1 {
         ;
     }
 }
+@media all and (max-width: 445px) {
+    .headerlinks #flat{
+        display: none;
+        }
+    
+        .dropdown {
+        position: relative;
+        display: inline-block;
+        }
+        
+        .dropdown-toggle {
+        text-decoration: none;
+        color: #1f2937;
+        padding: 5px;
+        }
+        
+        .dropdown-menu {
+        border-radius: 5px;
+        text-align: end;
+        position: absolute;
+        top: 100%;
+        width: 8em;
+        right: 0;
+        display: none;
+        background-color:#1f2937;
+        padding: 10px;
+        list-style: none;
+        margin: 0;
+        }
+        
+        .dropdown-menu li {
+        display: flex;
+        font-size: 1em;
+        flex-direction: column;
+        text-decoration: none;
+        flex-wrap: nowrap;
+        margin-bottom: 10px;
+        }
+        
+        .dropdown:hover .dropdown-menu {
+        display: block;
+        }
+    
+}
+
 footer {
     display: flex;
+    width: 100%;
     background-color: #1f2937;
-    color:#f9faf8;
-    width: 100vw;
+    color: #e5e7eb;
     justify-content: center;
     align-items: center;
-    padding: 1%;
-    font-size: 1vw;
-}
+    padding: 0.5%;
+    text-align: center;
+    font-size: 0.75em;
+  }
+  
+  @media all and (max-width: 825px) {
+    footer {
+      font-size: 0.75em;
+      padding: 1%;
+    }
+  
+  
+  }
+  
+  @media all and (max-width: 450px) {
+    footer {
+      font-size: 0.4em;
+    }
+  
+  }
