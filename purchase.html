@@ -1,0 +1,226 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,800;1,900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configuration</title>
+<link rel="stylesheet" href="purchase.css">
+<link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+</head>
+<body>
+    
+    <div class="logonav">
+        <h3>M-IB:08</h3>
+        <div class="headerlinks">
+            <a href="index.html" id="flat">Home</a>
+            <a href="https://www.ispr.gov.pk/" id="flat">Homebase</a>
+            <a href="sourcecode.html" id="flat">Source Code</a>
+            <div class="dropdown">
+                <a href="#" class="dropdown-toggle">Menu</a>
+                <ul class="dropdown-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="https://www.ispr.gov.pk/">Homebase</a></li>
+                    <li><a href="sourcecode.html">Source Code</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="titletext">
+        <h1>Customize your M-IB:08</h1>
+        <p>Starting from $2,750,000 or with as low as $500 per day &#9674 (600 month term)</p>
+    </div>
+
+    <section class="imageslideshow ">
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide"><img src="images/IbrahWorkout.jpg" alt=""></div>
+              <div class="swiper-slide"><img src="images/ibrahside.png" alt=""></div>
+              <div class="swiper-slide"><img src="images/ibrahpondering.jpg" alt=""></div>
+              <div class="swiper-slide"><img src="images/IbrahPolestarSide.jpg" alt=""></div>
+              <div class="swiper-slide"><img src="images/IbrahPolestarRear.jpg" alt=""></div>
+              <div class="swiper-slide"><img src="images/IbrahPolestarInside.jpg" alt=""></div>
+              <div class="swiper-slide"><img src="images/IbrahPolestarGP.jpg" alt=""></div>
+              <div class="swiper-slide"><img src="images/IbrahPolestarFront.jpg" alt=""></div>
+              <div class="swiper-slide"><img src="images/ibrahimfront.png" alt=""></div>
+              <div class="swiper-slide"><img src="images/IbrahFood.jpg" alt=""></div>
+              <div class="swiper-slide"><img src="images/IbrahBarbie.jpg" alt=""></div>
+              <div class="swiper-slide"><img src="images/gcpicibrah.png" alt=""></div>
+            </div>
+            <!-- If we need pagination -->
+          
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+          </div>
+    </section>
+
+
+    <section class="specs">
+        <div id="options">
+            <!-- Processor, Memory, Storage, Power Supply, and Language sections -->
+            
+            <span id="processor">
+                <h2>Processor (SOC)</h2>
+                <p id="popupprocessor" class= "specdesc" onclick="cpuinfo()">What SOC configuration is right for you?</p>
+
+                <span id = "cpuOp1" class="optionBtn processorOptions" onclick="cpuOptionClicked('cpuOp1'), cpuOption1()">
+                    <p>PIS S1 with 24-core CPU, 7.5 GHz Clock Speed, 64-core GPU, 1345-core Neural-Bionic Engine</p>
+                    <p id="price">+ $0</p>
+                </span>
+                <span id = "cpuOp2" class="optionBtn processorOptions"  onclick="cpuOptionClicked('cpuOp2'), cpuOption2()">
+                    <p>PIS S1 with 36-core CPU, 8.4 GHz Clock Speed, 72-core GPU, 2104-core Neural-Bionic Engine</p>
+                    <p id="price">+ $295,000</p>
+                </span>
+                <span id = "cpuOp3" class="optionBtn processorOptions"  onclick="cpuOptionClicked('cpuOp3'), cpuOption3()">
+                    <p>PIS S1 Pro with 96-core CPU, 11.5 GHz Clock Speed (Turbo up to 21 GHz), 128-core GPU, 4328-core Neural-Bionic Engine</p>
+                    <p id="price">+ $650,000</p>
+                </span>
+                <span id = "cpuOp4" class="optionBtn processorOptions"  onclick="cpuOptionClicked('cpuOp4'), cpuOption4()">
+                    <p>PIS S1 Max with 158-core CPU, 13 GHz Clock Speed (Turbo up to 24.5 GHz),192-core GPU, 9344-core Neural-Bionic Engine</p>
+                    <p id="price">+ $1,200,000</p>
+                </span>
+                <span id = "cpuOp5"class="optionBtn processorOptions" onclick="cpuOptionClicked('cpuOp5'), cpuOption5()">
+                    <p>PIS S1 Ultra with 228-core CPU, 19 GHz Clock Speed (Turbo up to 42 GHz), 368-core GPU, 17,233-core Neural-Bionic Engine</p>
+                    <p id="price">+ $4,735,500 </p>
+                </span>
+
+            </span>
+            <span id="memory">
+                <h2>Memory</h2>
+                <p id="popupmemory" class= "specdesc" onclick="raminfo()">How much memory is right for you?</p>
+            
+                <span id="memoryOp1" class="optionBtn memoryOptions" onclick="memoryOptionClicked('memoryOp1'), memoryOption1()">
+                    <p>1.92TB DDR6X HyperBionic Memory</p>
+                    <p class="price">+ $0</p>
+                </span>
+                <span id="memoryOp2" class="optionBtn memoryOptions" onclick="memoryOptionClicked('memoryOp2'), memoryOption2()">
+                    <p>4.56TB DDR6X HyperBionic Memory</p>
+                    <p class="price">+ $90,000</p>
+                </span>
+                <span id="memoryOp3" class="optionBtn memoryOptions" onclick="memoryOptionClicked('memoryOp3'), memoryOption3()">
+                    <p>10.28TB DDR7 HyperBionic Memory</p>
+                    <p class="price">+ $250,000</p>
+                </span>
+            </span>
+
+            <span id="storage">
+                <h2>Storage</h2>
+                <p id="popupstorage" class="specdesc" onclick="storageinfo()">How much storage is right for you?</p>
+
+                <span id = "storageOp1" class="optionBtn storageOptions" onclick="storageOptionClicked('storageOp1'),storageOption1()">
+                    <p>1.5PB Ultra-fast NVMe v1 Gen X SSD</p>
+                    <p id="price">+ $0</p>
+                </span>
+                <span id = "storageOp2" class="optionBtn storageOptions" onclick="storageOptionClicked('storageOp2'),storageOption2()">
+                    <p>2.5PB Ultra-fast NVMe v2 Gen X Plus SSD</p>
+                    <p id="price">+ $975,625</p>
+                </span>
+                <span id = "storageOp3" class="optionBtn storageOptions" onclick="storageOptionClicked('storageOp3'),storageOption3()">
+                    <p>10PB Ultra-fast NVMe v2 Gen XII Pro SSD</p>
+                    <p id="price">+ $3,550,000</p>
+                </span>
+            </span>
+
+            <span id="psupply">
+                <h2>Power Supply</h2>
+                <p id="popuppsu" class="specdesc" onclick="psuinfo()">What Power Supply is right for you?</p>
+
+                <span id = "powerOp1" class="optionBtn psupplyOptions" onclick="psuOptionClicked('powerOp1'),psuOption1()">
+                    <p>45kW GaN Hyper-Efficient "Gold"-Rated Power Supply</p>
+                    <p id="price">+ $0</p>
+                </span>
+                <span id = "powerOp2" class="optionBtn psupplyOptions" onclick="psuOptionClicked('powerOp2'),psuOption2()">
+                    <p>65kW GaN Hyper-Efficient "Platinum"-Rated Power Supply</p>
+                    <p id="price">+ $67,625</p>
+                </span>
+                <span id = "powerOp3"class="optionBtn psupplyOptions" onclick="psuOptionClicked('powerOp3'),psuOption3()">
+                    <p>125kW GaN Hyper-Efficient "Diamond+"-Rated Power Supply</p>
+                    <p id="price">+ $150,000</p>
+                </span>
+            </span>
+            
+            <span id = "langselec">
+                <h2>Pre-installed Lanugage</h2>
+                <select name="languages" id="lang">
+                    <option value="English US">English US</option>
+                    <option value="English UK">English UK</option>
+                    <option value="Urdu">Urdu</option>
+                    <option value="Français">Français</option>
+                    <option value="Deutsch">Deutsch</option>
+                    <option value="Español">Español</option>
+                    <option value="عربي">عربي</option>
+                </select>
+            </span>
+        </div>
+        <div class = "infosection">
+
+            <span id="specoverview">
+                <h2 id="total">$2,750,000</h2>
+                <p id="processor-selection">Processor: None</p>
+                <p id="memory-selection">Memory: None</p>
+                <p id="storage-selection">Storage: None</p>
+                <p id="psupply-selection">Power Supply: None</p>
+            </span>
+            <div id="icons">
+                <span id = "shippingicon">
+                    <img src="images/package.png" alt="package icon">
+                    <h5>1 Week Express Shipping</h5>
+                </span>
+                <span id = "returnicon">
+                    <img src="images/return.png" alt="return icon">
+                    <h5>14 Day Return Policy</h5>
+                </span>
+                <span id = "warrantyicon">
+                    <img src="images/warranty.png" alt="warranty icon">
+                    <h5>3 Year Limited Warranty &#9674&#9674</h5>
+                </span>
+            </div>
+
+            <div id = "mainconfiginfo">
+                <h4 id = "statusCheck"></h4>
+                <a href="checkout.html" type="button" id="checkoutButton" onclick="isAllSelected(event)">Proceed to Checkout</a>
+                <span id="included">
+                    <div id="includedpics">
+                        <span id = "bb">
+                            <img src="images/IbrahBarbie.jpg" alt="" id = "barbiepic">
+                            <p>M-IB in gift wrap&#9674&#9674&#9674</p>
+                        </span>
+                        <span id = "pa">
+                            <img src="images/Power-Adapter-PNG-Transparent-Image.png" alt="" id = "powerbrick">
+                            <p>Hyper-Efficient GaN PSU</p>
+                        </span>
+                    </div>
+                    <h4>What's included:</h4>
+                </span>
+
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="notes">
+        <p>&#9674 : With a $500,000 one-time down-payment<br>
+        &#9674&#9674 : Limited Warranty doesn't include repairs to the chassis or waste-disposal components <br>
+        &#9674&#9674&#9674 : If you purchase before 20th April, 2069
+        </p>
+    </section>
+    <footer>
+        <p>The Government of ROP - PIS Military &reg - All Rights Reserved - Created by Pathan v3 beta</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="purchase.js"></script>
+</body>
+</html>

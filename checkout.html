@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="checkout.css">
+</head>
+<body>
+    <div class="logonav">
+        <h3>M-IB:08</h3>
+        <div class="headerlinks">
+            <a href="index.html" id="flat">Home</a>
+            <a href="https://www.ispr.gov.pk/" id="flat">Homebase</a>
+            <a href="sourcecode.html" id="flat">Source Code</a>
+            <div class="dropdown">
+                <a href="#" class="dropdown-toggle">Menu</a>
+                <ul class="dropdown-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="https://www.ispr.gov.pk/">Homebase</a></li>
+                    <li><a href="sourcecode.html">Source Code</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="details">
+    <div id="info">
+        <section class = "shippingaddress">
+            <h1>Where should we deliver your M-IB:08?</h1>
+            <h3>Enter your name and address:</h3>
+            <div class="textboxsec">
+                <select name="title" id="title">
+                    <option value="Title">Title</option>
+                    <option value="Mr">Mr</option>
+                    <option value="Mrs">Mrs</option>
+                    <option value="Miss">Miss</option>
+                    <option value="Dr">Dr</option>
+                    <option value="Professor">Professor</option>
+                    <option value="AH-64 Chopper">AH-64 Chopper</option>
+                </select>
+                <span class="mandFields">
+                    <input type="text" id = "fn" placeholder="First Name">
+                    <p id="fnWarning"></p>
+                </span>
+                <span class = mandFields>
+                    <span id="r2">
+                        <input type="text" id = "ln" placeholder="Last Name">
+                        <input type="text" id="s-opt" placeholder="Suffix (Opt.)">
+                    </span>
+                    <p id="lnWarning"></p>
+                </span>
+                <span class="mandFields">
+                    <input type="text" id="address" placeholder="Street Address">
+                    <p id="addressWarning"></p>
+                </span>
+                <input type="text" id="area" placeholder="Area">
+                <input type="text" id="town" placeholder="Town">
+                <span id = "loc" onblur="isCC()">
+                    <input type="text" id="city" placeholder="City" onblur="isCC()">
+                    <input type="text" id="country" placeholder="Country" onblur="isCC()">                    
+                </span>
+                <h3>What's your contact information?</h3>
+                <div id="contactinfo">
+                    <span class="mandFields">
+                        <input type="email" name="email" id="emailid" placeholder="Enter Your Email Address">
+                        <p id="emailWarning"></p>
+                    </span>
+                    <span class="mandFields">
+                        <input type="tel" id="phone" maxlength="10" placeholder="Enter Your Phone Number"/>
+                        <p id="phoneWarning"></p>
+                    </span>
+                    <p id="msg">We’ll email you a receipt and send order updates to your mobile phone via SMS or iMessage. <br>The phone number you enter can’t be changed after you place your order, so please make sure it’s correct.</p>
+                    <button type="button" id="ptpbtn" onclick="check()">Proceed to Payment</button>
+                </div>
+            </div>
+        </section>
+
+
+    </div>
+
+    <section id="paymentsection">
+        <h1>Here's how you can pay</h1>
+        <h3>Enter your Card Info:</h3>
+        <p>Introducing PIS ShieldPay, our Super Secure Payment System: Your ultimate solution for safeguarding online transactions. Brought to you by PIS, it employs cutting-edge encryption and tokenization, ensuring end-to-end protection of sensitive data. With PCI DSS compliance, AI-powered fraud detection, and multi-factor authentication, your customers' information remains impenetrable. Our vigilant 24/7 monitoring and regular audits elevate user trust, securing your credentials and accounts.</p>
+        <div class="payment-fields">
+            <div class="credit-card">
+                <input type="number" id="cnum" placeholder="Credit/Debit Card" maxlength="16" onblur="CCID(), CCDC()">
+                <div class="card-logos">
+                    <img src="images/Visa-Logo.png" id="visa" alt="">
+                    <img src="images/MasterCard-Logo.png" id="mc" alt="">
+                    <img src="images/AMEX-Logo.png" id="amex">
+                </div>
+            </div>
+            <div class="cvv-expiration">
+                    <input type="text" id="expiration" placeholder="Expiration MM/YY" onblur="experID()">
+                    <input type="number" id="cvv" placeholder="CVV" maxlength="3" onblur="cvvID()">
+            </div>
+            <button type="button" id="cpbtn" onclick="checkPayment()">Confirm Payment</button>
+            
+        </div>
+    </section>
+    </div>
+
+    <section id="confirmDetails">
+        <h1>Thank You! Confirm your order before proceeding.</h1>
+        <div id="theDetails">
+
+            <div id="paymentInformation">
+                    <h2>Your Payment Details:</h1>
+                    <p id="creditNumInfo">xxxxxxxxxxxxx</p>
+                    <p id="expirationDateInfo"></p>
+                    <p id="cvvInfo"></p>
+            </div>
+
+            <div id="shippingInformation">
+                    <h2>Your Shipping Details:</h1>
+                    <p id="firstName"></p>
+                    <p id="lastName"></p>
+                    <p id="yourAddress"></p>
+                    <p id="cityInfo"></p>
+                    <p id="countryInfo"></p>
+                    <p id="emailID"></p>
+                    <p id="phoneID"></p>
+            </div>
+        </div>
+
+        <button type="button" id="cOrd" onclick="completeOrder()">Complete order</button>
+    </section>
+    <section id = "finalPage">
+        <h1>Congratulations! M-IB:08 order has been sent!</h1>
+        <div>
+            <h4 id = "on">Your Order Number is: #</h4>
+            <h4 id="dd">Your Estimated Delivery Date: </h4>
+        </div>
+        <a href="index.html">Go Home</a>
+
+    </section>
+    <footer>
+        <p>The Government of ROP - PIS Military &reg - All Rights Reserved - Created by Pathan v3 beta</p>
+    </footer>
+</body>
+
+<script src="checkout.js"></script>
+
+</html>
