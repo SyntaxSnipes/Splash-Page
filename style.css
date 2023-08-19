@@ -483,6 +483,8 @@ html,body
   display: flex;
   flex-direction: row;
   align-items: center;
+  gap: 25px;
+  justify-content: space-between;
 
 }
 #overlaypic{
@@ -542,9 +544,11 @@ html,body
   flex-shrink: 5;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: flex-end;
   justify-content: center;
+  text-align: end;
 }
+
 
 
 .funclist li a {
@@ -562,6 +566,29 @@ html,body
   color: #3882f6;
 }
 
+
+@media all and (min-width: 1800px){
+  #gc{
+    width: 40em;
+    height: auto;
+    border-radius: 5%;
+    transition: transform 0.7s ease-out;
+
+  }
+  
+  
+  #side{
+    width: 30em;
+    height: auto;
+    border-radius: 5%;
+    transition: transform 0.7s ease-out;
+    }
+
+    #side:hover{
+      transform:scale(1.05);
+      transition: transform 0.5s ease-in-out;
+    }
+}
 @media all and (max-width: 1000px){
 
 
@@ -658,22 +685,21 @@ html,body
 
 }
 
-@media all and (max-width: 445px){
-  #overlaypic{
-    position: unset;
-    padding: unset;
-    margin-left: unset;
-    margin-right: unset;
-    box-sizing: unset;
-    width: unset;
-    height: unset;
+@media all and (max-width: 575px){
+  #overlaypic {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: end;
+    justify-content: end;
+    text-align: end;
   }
   .sectiontwo{
     display: flex;
     flex-direction: column;
     padding: 5% 1%;
     margin: 1% 2.5%;
-    gap: 20%;
+    gap: 20px;
     align-items: top;
     justify-content: top;
   }
@@ -688,7 +714,7 @@ html,body
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     gap: 5px;
   }
 
@@ -775,7 +801,53 @@ html,body
 
 
 
+@media all and (max-width: 375px){
+  #gc{
+    width: 0px;
+    height: auto;
+    border-radius: 5%;
+    transition: transform 0.7s ease-out;
+    position: unset;
+    z-index: unset;
+    top:unset;
+  }
+  #ponder{
+    border-radius: 5%;
+    width: 7.5em;
+    height: auto;
+  }
 
+  #ponderpair #sidepair{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  #side{
+    width: 7.5em;
+    height: auto;
+    border-radius: 5%;
+    position: unset;
+    top: unset;
+    left: unset;
+    z-index: unset;
+    transition: transform 0.7s ease-out;
+    }
+
+    #side:hover{
+      transform:scale(1.05);
+      transition: transform 0.5s ease-in-out;
+    }
+    #overlaypic {
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+      align-items: end;
+      justify-content: end;
+      text-align: end;
+    }
+  
+}
 /* SECTION 3 */
 
 .sectionthree {
@@ -788,10 +860,10 @@ html,body
 }
 
 .quote{
-  font-size: 3em;
+  font-size: 3.5em;
   color: #1f2937;
-  font-weight: 300;
-  font-style: italic;
+
+
 
 }
 
@@ -799,29 +871,21 @@ html,body
   font-size: 1.35em;
   text-align: end;
   padding-right: 5%;
-  font-weight: 400;
 }
 
-.quoteauthor i{
-  font-weight: lighter;
-  font-style: italic;
-}
 
 
 @media all and (max-width: 785px) {
   .quote{
     font-size: 2.25em;
     color: #1f2937;
-    font-weight: 300;
-    font-style: italic;
   
   }
 
   .quoteauthor {
     font-size: 1em;
     text-align: end;
-    padding-right: 5%;
-    font-weight: 400;
+
   }
   
 }
@@ -838,29 +902,183 @@ html,body
   .quote{
     font-size: 1.95em;
     color: #1f2937;
-    font-family: SFThinItalic;
+
     padding-bottom: 3%;
   
   }
 
   .quoteauthor{
-    font-size: 0.85em;
+    font-size: 1.2em;
     text-align: end;
     padding-right: 5%;
   }
 
   .quoteauthor i{
     font-family: SFUltraLightItalic;
-    font-size: 0.8em;
+    font-size: 1em;
   }
   
 }
+
+
+.reviewsection {
+  width: 100vw;
+  padding-top: 7.5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  margin-bottom: 10%;
+}
+.quotetitles h1 {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  font-size: 4em;
+  margin: 0;
+  padding: 5% 2.5% 0% 2.5%;
+}
+.reviewsection h3{
+  font-family: SFItalicLight;
+  font-size: 2.75em;
+  
+}
+
+
+.reviewsection p {
+  font-family: SFThinItalic;
+  font-size: 2.25em;
+  margin: 0;
+}
+
+#r1, #r3, #r5{
+  padding-right: 1.75em;
+  padding-left: 1em;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+  align-items: flex-end;
+  text-align: end;
+}
+
+#r2, #r4, #r6{
+  padding-right: 1.75em;
+  padding-left: 1em;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  align-items: flex-start;
+  text-align: start;
+}
+
+@media all and (max-width: 885px) {
+
+  .reviewsection {
+      width: 100vw;
+      margin-top: 5%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 3em;
+      margin-bottom: 10%;
+  }
+  .reviewsection h3{
+      font-family: SFItalicLight;
+      font-size: 2.25em;
+  }
+  
+  .reviewsection p{
+      font-family: SFThinItalic;
+      font-size: 1.8em;
+  }
+  .quotetitles h1 {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 3em;
+    padding-top: 5%;
+    margin: 0;
+  }
+  
+  #r1, #r3, #r5{
+      padding-right: 1em;
+      padding-left: 1em;
+      display: flex;
+      flex-direction: column;
+      align-self: flex-end;
+      align-items: flex-end;
+      text-align: end;
+  }
+  
+  #r2, #r4, #r6{
+      padding-right: 1em;
+      padding-left: 1em;
+      display: flex;
+      flex-direction: column;
+      align-self: flex-start;
+      align-items: flex-start;
+      text-align: start;
+  }
+  
+}
+@media all and (max-width: 500px) {
+
+    
+  .reviewsection {
+      width: 100vw;
+      margin-top: 5%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 3em;
+      margin-bottom: 10%;
+      padding: 0;
+  }
+  .reviewsection h3{
+      font-size: 2em;
+  }
+  
+  .reviewsection p{
+      font-size: 1em;
+  }
+  .quotetitles h1 {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 2em;
+    padding-top: 5%;
+    margin: 0;
+  }
+  
+  #r1, #r3, #r5{
+      padding-right: 0.75em;
+      padding-left: 0.5em;
+      display: flex;
+      flex-direction: column;
+      align-self: center;
+      align-items: center;
+      text-align: center;
+  }
+  
+  #r2, #r4, #r6{
+      padding-right: 0.75em;
+      padding-left: 0.5em;
+      display: flex;
+      flex-direction: column;
+      align-self: center;
+      align-items: center;
+      text-align: center
+      ;
+  }
+}
+
+
 
 /* SECTION 4 */
 
 
 .sectionfour{
-  padding: 15% 20%;
+  padding: 25% 20%;
   background-image: url("images/ibrahaicollage");
   background-size: 20%;
 
@@ -882,7 +1100,7 @@ html,body
 }
 .cta h5 {
   font-size: 1.7em;
-  font-family: SFBold;
+  font-family: SFMedium;
   margin: 0;
 
 }
@@ -897,7 +1115,8 @@ html,body
   border-radius: 7px;
   margin-top: 2.5%;
   align-items: flex-start;
-  width: fit-content
+  width: fit-content;
+  white-space: nowrap;
 }
 
 .sbutton:hover {
@@ -910,6 +1129,22 @@ html,body
 .cta p {
   font-size: 1em;
   font-family: SFMedium;
+}
+
+@media all and (max-width: 900px) {
+  .sbutton{
+    background-color: #3882f6;
+    text-decoration: none;
+    color:#e5e7eb;
+    border: 1.5px solid #e5e7eb;
+    font-size: 0.8em;
+    padding: 1% 2%;
+    border-radius: 7px;
+    white-space: nowrap;
+    margin-top: 2.5%;
+    align-items: flex-start;
+    
+  }
 }
 
 @media all and (max-width: 825px) {
