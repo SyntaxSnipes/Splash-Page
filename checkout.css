@@ -503,7 +503,11 @@ button {
     
 
     #paymentsection h1 {
-        font-size: 4em;
+        font-size: 3em;
+        text-align: center;
+    }
+    #paymentsection p {
+        font-size: 0.8em;
         text-align: center;
     }
 
@@ -537,6 +541,7 @@ button {
     margin-top: 10%;
     padding: 1% 4%;
     font-size: 1em;
+    margin-bottom: 20%;
 }
 
 
@@ -564,6 +569,55 @@ button {
 
 #shippingInformation{
     text-align: end;
+
+}
+
+
+@media all and (max-width: 550px) {
+    
+#confirmDetails {
+    display: none;
+    margin-top: 15%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#confirmDetails button{
+    margin-top: 10%;
+    padding: 1% 4%;
+    font-size: 1em;
+    margin-bottom: 20%;
+}
+
+
+#confirmDetails h1{
+    font-size: 2.5em;
+    text-align: center;
+}
+
+
+
+#theDetails {
+    text-align: center;
+    display: flex;
+    margin-top: 10%;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+#theDetails h2 {
+    font-size: 2em;
+}
+
+
+
+#shippingInformation{
+    text-align: center;
+
+}
 
 }
 
@@ -599,7 +653,7 @@ button {
 #finalPage a{
     
     text-decoration: none;
-    background-color: #141821;
+    background-color:#3882f6;
 
     color: #e5e7eb;
 

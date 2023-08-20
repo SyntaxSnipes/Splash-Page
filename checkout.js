@@ -138,6 +138,7 @@ function check(){
     console.log("emailValid:", emailValid);
     console.log("phoneValid:", phoneValid);
 
+    isCC();
     if (fnValid && lnValid && addressValid && emailValid && phoneValid) {
         cardPayment.style.display = "flex"; // Change the display property
         document.getElementById("info").style.display = "none"
@@ -149,23 +150,26 @@ function check(){
 
 }
 
-
-
 function CCID() {
     let cnumValue = creditNum.value;
-    let cnumfv = cnumValue.charAt(0);
+    let cnumLastThree = cnumValue.slice(-3); // Get the last three characters of the input
 
     visa.style.opacity = "10%";
     amex.style.opacity = "10%";
     masterCard.style.opacity = "10%";
 
-    if (cnumfv == 3) {
-        amex.style.opacity = "100%";
-    } else if (cnumfv == 4) {
-        visa.style.opacity = "100%";
-    } else if (cnumfv == 5) {
-        masterCard.style.opacity = "100%";
+    if (cnumValue.length >= 3) {
+        if (cnumValue.charAt(0) == '3') {
+            amex.style.opacity = "100%";
+        } else if (cnumValue.charAt(0) == '4') {
+            visa.style.opacity = "100%";
+        } else if (cnumValue.charAt(0) == '5') {
+            masterCard.style.opacity = "100%";
+        }
     }
+
+    // Update the text content of the element with the extracted last three numbers
+    document.getElementById("creditNumInfo").textContent += cnumLastThree;
 }
 function experID(){
     let expirValue= document.getElementById("expiration").value;
@@ -211,33 +215,23 @@ function isCC(){
 }
 function CCDC() {
     let cnumValue = creditNum.value;
+    let cnumFirstDigit = cnumValue.charAt(0);
     let cnumLength = cnumValue.length;
-    let cnumfv = cnumValue.charAt(0);
 
-    if (cnumLength == 16 && cnumfv !== '3' ) {
-        creditNum.style.background = "none";
-        creditNum.style.border = "2px solid grey"; // Reset to grey
-        CCValid = true;
-        creditNumVar += creditNum.value;
-
-    }
-
-
-    else if (cnumLength == 15 && cnumfv == '3') {
+    if ((cnumFirstDigit === '3' && cnumLength === 15) || ((cnumFirstDigit === '4' || cnumFirstDigit === '5') && cnumLength === 16)) {
+        // Valid starting digit and length, reset styles
         creditNum.style.background = "none";
         creditNum.style.border = "2px solid grey";
-        CCValid = true
-        CCValid = true
-        creditNumVar += creditNum.value
-    }
-    else {
+        CCValid = true;
+        creditNumVar += creditNum.value;
+    } else {
+        // Invalid starting digit or length, show error styles
         creditNum.style.background = "rgba(227, 141, 141, 0.4)";
         creditNum.style.border = "2px solid red";
-        CCValid = false
+        CCValid = false;
     }
-
-
 }
+
 
 
 creditNum.addEventListener("input", function () {
@@ -281,20 +275,36 @@ function checkPayment() {
         // Hide the paymentsection section
         document.getElementById("paymentsection").style.display = "none";
 
+        // Clear the previous content
+        document.getElementById("firstName").textContent = "";
+        document.getElementById("lastName").textContent = "";
+        document.getElementById("yourAddress").textContent = "";
+        document.getElementById("emailID").textContent = "";
+        document.getElementById("phoneID").textContent = "";
+        document.getElementById("cityInfo").textContent = "";
+        document.getElementById("countryInfo").textContent = "";
+        document.getElementById("expirationDateInfo").textContent = "";
+        document.getElementById("cvvInfo").textContent = "";
+
         // Populate the fields in the confirmDetails section
         document.getElementById("firstName").textContent = firstNameVar;
         document.getElementById("lastName").textContent = lastNameVar;
         document.getElementById("yourAddress").textContent = addressVar;
         document.getElementById("emailID").textContent = emailVar;
         document.getElementById("phoneID").textContent = phoneVar;
-        document.getElementById("cityInfo").textContent += cityVar;
-        document.getElementById("countryInfo").textContent += countryVar;
+        document.getElementById("cityInfo").textContent = cityVar;
+        document.getElementById("countryInfo").textContent = countryVar;
         document.getElementById("expirationDateInfo").textContent = expirationVal;
-        document.getElementById("cvvInfo").textContent = thecvvVal;
+        document.getElementById("cvvInfo").textContent = CVVValid ? thecvvVal : ""; // Only add CVV if it's valid
         
-        console.log(`${firstNameVar}, ${lastNameVar}, ${addressVar}, ${emailVar}, ${phoneVar}, ${cityVar}, ${countryVar}, ${expirationVal}, ${thecvvVal}`)
+        // Update the text content of the element with the masked card number only if it's valid
+        if (CCValid) {
+            document.getElementById("creditNumInfo").textContent = "XXXXXXXXXXXXX" + creditNum.value.slice(-3);
+        }
     }
 }
+
+
 
 function completeOrder() {
     document.getElementById("confirmDetails").style.display = "none"
