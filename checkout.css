@@ -585,7 +585,7 @@ button {
 
 #confirmDetails button{
     margin-top: 10%;
-    padding: 1% 4%;
+    padding: 2.25% 4%;
     font-size: 1em;
     margin-bottom: 20%;
 }
@@ -682,7 +682,6 @@ button {
     #finalPage a{
         
         text-decoration: none;
-        background-color: #141821;
     
         color: #e5e7eb;
         margin-top: 20%;
