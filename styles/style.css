@@ -1,30 +1,30 @@
 @font-face {
   font-family: SFMedium;
-  src: url(/fonts/SFPRODISPLAYMEDIUM.OTF);
+  src: url(./fonts/SFPRODISPLAYMEDIUM.OTF);
 }
 @font-face {
   font-family: SFItalicHeavy;
-  src: url(/fonts/SFPRODISPLAYHEAVYITALIC.OTF);
+  src: url(./fonts/SFPRODISPLAYHEAVYITALIC.OTF);
 }
 @font-face {
   font-family: SFBold;
-  src: url(/fonts/SFPRODISPLAYBOLD.OTF);
+  src: url(./fonts/SFPRODISPLAYBOLD.OTF);
 }
 @font-face {
   font-family: SFItalicLight;
-  src: url(/fonts/SFPRODISPLAYLIGHTITALIC.OTF);
+  src: url(./fonts/SFPRODISPLAYLIGHTITALIC.OTF);
 }
 @font-face {
   font-family: SFRegular;
-  src: url(/fonts/SFPRODISPLAYREGULAR.OTF);
+  src: url(./fonts/SFPRODISPLAYREGULAR.OTF);
 }
 @font-face {
   font-family: SFUltraLightItalic;
-  src: url(/fonts/SFPRODISPLAYULTRALIGHTITALIC.OTF);
+  src: url(./fonts/SFPRODISPLAYULTRALIGHTITALIC.OTF);
 }
 @font-face {
   font-family: SFThinItalic;
-  src: url(/fonts/SFPRODISPLAYTHINITALIC.OTF);
+  src: url(./fonts/SFPRODISPLAYTHINITALIC.OTF);
 }
 :root {
   --bar-width: 35px;
