@@ -4,25 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Checkout</title>
-    <link rel="stylesheet" href="checkout.css">
+    <link rel="stylesheet" href="styles/checkout.css">
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 </head>
 <body>
     <div class="logonav">
-        <h3>M-IB:08</h3>
-        <div class="headerlinks">
-            <a href="index.html" id="flat">Home</a>
-            <a href="https://www.ispr.gov.pk/" id="flat">Homebase</a>
-            <a href="sourcecode.html" id="flat">Source Code</a>
-            <div class="dropdown">
-                <a href="#" class="dropdown-toggle">Menu</a>
-                <ul class="dropdown-menu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="https://www.ispr.gov.pk/">Homebase</a></li>
-                    <li><a href="sourcecode.html">Source Code</a></li>
-                </ul>
-            </div>
-        </div>
+        <img src="images/jplogo.svg" alt="">
+        <span id="NavText">
+            <h3>
+                <a href="index.html"> M-IB:08</a>
+             </h3>
+             <label class="hamburger-menu">
+                <input type="checkbox" />
+              </label>
+              <aside class="sidebar">
+                <nav>
+                    <div class=""><a href="index.html">Home</a></div>
+                    <div class=""><a href="purchase.html">Buy M-IB:08</a></div>
+                    <div class=""><a href="signup.html">Newsletter </a></div>
+                    <div class=""><a href="https://www.ispr.gov.pk/">Homebase</a></div>
+                    <div class=""><a href="sourcecode.html">Source Code</a></div>
+                    <div class=""><a href="about.html">About</a></div>
+                    <div class=""><a href="https://aayanpathan.com">aayanpathan.com</a></div>
+                    <div class=""><a href="https://github.com/SyntaxSnipes/Splash-Page/tree/gh-pages">GitHub</a></div>
+                </nav>
+              </aside>
     </div>
     <div id="details">
     <div id="info">
@@ -81,8 +87,11 @@
 
     <section id="paymentsection">
         <h1>Here's how you can pay</h1>
-        <h3>Enter your Card Info:</h3>
-        <p>Introducing PIS ShieldPay, our Super Secure Payment System: Your ultimate solution for safeguarding online transactions. Brought to you by PIS, it employs cutting-edge encryption and tokenization, ensuring end-to-end protection of sensitive data. With PCI DSS compliance, AI-powered fraud detection, and multi-factor authentication, your customers' information remains impenetrable. Our vigilant 24/7 monitoring and regular audits elevate user trust, securing your credentials and accounts.</p>
+        <h3>
+            Enter your Card Information:
+            <img src="/images/info.png" style="width: 30px; height: 30px;" onclick="payAlert()">
+        </h3>
+
         <div class="payment-fields">
             <div class="credit-card">
                 <input type="number" id="cnum" placeholder="Credit/Debit Card" maxlength="16" onblur="CCID(), CCDC()">
@@ -133,14 +142,13 @@
             <h4 id = "on">Your Order Number is: #</h4>
             <h4 id="dd">Your Estimated Delivery Date: </h4>
         </div>
-        <a href="index.html">Go Home</a>
-
+        <a href="index.html" id="homeBtn">Go Home</a>
     </section>
     <footer>
-        <p>The Government of ROP - PIS Military &reg - All Rights Reserved - Created by Pathan - V3.0</p>
+        <p>The Government of ROP - PIS Military &reg - All Rights Reserved - Created by Pathan - J&P Private Enterprises - V3.1</p>
     </footer>
 </body>
-
-<script src="checkout.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="javascript/checkout.js"></script>
 
 </html>

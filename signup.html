@@ -8,47 +8,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up - PIS</title>
 </head>
-<link rel="stylesheet" href="signup.css">
+<link rel="stylesheet" href="styles/signup.css">
 <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 <body>
-    <div class="logonav">
-        <h3>M-IB:08</h3>
+    <section class="top">
+        <div class="logonav">
+        <img src="images/jplogo.svg" alt="">
+        <span id="NavText">
+        <h3>
+            <a href="index.html"> M-IB:08</a>
+        </h3>
         
-        <div class="headerlinks">
-            <a href="index.html" id="flat">Home</a>
-            <a href="https://www.ispr.gov.pk/" id="flat">Homebase</a>
-            <a href="sourcecode.html" id="flat">Source Code</a>
-            <div class="dropdown">
-            <a href="#" class="dropdown-toggle">Menu</a>
-            <ul class="dropdown-menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="https://www.ispr.gov.pk/">Homebase</a></li>
-                <li><a href="sourcecode.html">Source Code</a></li>
-            </ul>
-            </div>
-        </div>
-        </div>
+        <label class="hamburger-menu">
+            <input type="checkbox" />
+            </label>
+            <aside class="sidebar">
+            <nav>
+                <div class=""><a href="index.html">Home</a></div>
+                <div class=""><a href="purchase.html">Buy M-IB:08</a></div>
+                <div class=""><a href="signup.html">Newsletter</a></div>
+                <div class=""><a href="https://www.ispr.gov.pk/">Homebase</a></div>
+                <div class=""><a href="sourcecode.html">Source Code</a></div>
+                <div class=""><a href="about.html">About</a></div>
+                <div class=""><a href="https://aayanpathan.com">aayanpathan.com</a></div>
+                <div class=""><a href="https://github.com/SyntaxSnipes/Splash-Page/tree/gh-pages">GitHub</a></div>
+            </nav>
+            </aside>
+        </section>
     <div id = "main">
-    <h1>Sign Up</h1>
-    <p>Sign Up for the M-IB:08 AI Robot. Please enter your credentials so we can get in touch with you.</p>
-    <span id="credentials">
-    <h3>Email:</h3>
-    <input type="email" name="email" id="email" placeholder="Enter Email">
-    <h3>Password:</h3>
-    <input type="password" name="pass" id="pass" placeholder="Enter Password">
-    <h3>Re-enter Password:</h3>
-    <input type="password" name="repass" id="repass" placeholder="Re-enter Password">
-    </span>
-    <p id = "userWarning"></p>
-    <button id="createAccBtn" onclick="createAcc()">Create account</button>
-    <p id = "userMsg"></p>
-    <script src="signup.js"></script>
+        <div id="maincontent">
+            <h1>Sign Up</h1>
+            <p id="text">Sign Up for the M-IB:08 AI Robot Newsletter. Please enter your credentials so we can get in touch with you.</p>
+            <span id="credentials">
+            <h3>Email:</h3>
+            <input class="input" type="email" name="email" id="email" placeholder="Enter Email">
+            <h3>Password:</h3>
+            <input class="input" type="password" name="pass" id="pass" placeholder="Enter Password">
+            <h3>Re-enter Password:</h3>
+            <input class="input" type="password" name="repass" id="repass" placeholder="Re-enter Password">
+            </span>
+            <p id = "userWarning"></p>
+            <button id="createAccBtn" onclick="createAcc()">Create account</button></a>
+            <p id = "userMsg"></p>
+        </div>
     </div>
 
     <footer>
-        <p>The Government of ROP - PIS Military &reg - All Rights Reserved - Created by Pathan - V3.0</p>
+        <p>The Government of ROP - PIS Military &reg - All Rights Reserved - Created by Pathan - J&P Private Enterprises - V3.1</p>
     </footer>
 
 </body>
-
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="javascript/signup.js"></script>
 </html>

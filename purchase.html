@@ -9,29 +9,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Configuration</title>
-<link rel="stylesheet" href="purchase.css">
+<link rel="stylesheet" href="styles/purchase.css">
 <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
 <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 </head>
 <body>
-    
     <div class="logonav">
-        <h3>M-IB:08</h3>
-        <div class="headerlinks">
-            <a href="index.html" id="flat">Home</a>
-            <a href="https://www.ispr.gov.pk/" id="flat">Homebase</a>
-            <a href="sourcecode.html" id="flat">Source Code</a>
-            <div class="dropdown">
-                <a href="#" class="dropdown-toggle">Menu</a>
-                <ul class="dropdown-menu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="https://www.ispr.gov.pk/">Homebase</a></li>
-                    <li><a href="sourcecode.html">Source Code</a></li>
-                </ul>
-            </div>
-        </div>
+        <img src="images/jplogo.svg" alt="">
+        <span id="NavText">
+            <h3>
+                <a href="index.html"> M-IB:08</a>
+             </h3>
+             <label class="hamburger-menu">
+                <input type="checkbox" />
+              </label>
+              <aside class="sidebar">
+                <nav>
+                    <div class=""><a href="index.html">Home</a></div>
+                    <div class=""><a href="purchase.html">Buy M-IB:08</a></div>
+                    <div class=""><a href="signup.html">Newsletter </a></div>
+                    <div class=""><a href="https://www.ispr.gov.pk/">Homebase</a></div>
+                    <div class=""><a href="sourcecode.html">Source Code</a></div>
+                    <div class=""><a href="about.html">About</a></div>
+                    <div class=""><a href="https://aayanpathan.com">aayanpathan.com</a></div>
+                    <div class=""><a href="https://github.com/SyntaxSnipes/Splash-Page/tree/gh-pages">GitHub</a></div>
+                </nav>
+              </aside>
     </div>
-
     <div id="titletext">
         <h1>Customize your M-IB:08</h1>
         <p>Starting from $2,750,000 or with as low as $500 per day &#9674 (600 month term)</p>
@@ -55,14 +59,9 @@
               <div class="swiper-slide"><img src="images/IbrahBarbie.jpg" alt=""></div>
               <div class="swiper-slide"><img src="images/gcpicibrah.png" alt=""></div>
             </div>
-            <!-- If we need pagination -->
-          
             <!-- If we need navigation buttons -->
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
-          
-            <!-- If we need scrollbar -->
-            <div class="swiper-scrollbar"></div>
           </div>
     </section>
 
@@ -103,15 +102,15 @@
             
                 <span id="memoryOp1" class="optionBtn memoryOptions" onclick="memoryOptionClicked('memoryOp1'), memoryOption1()">
                     <p>1.92TB DDR6X HyperBionic Memory</p>
-                    <p class="price">+ $0</p>
+                    <p id="price">+ $0</p>
                 </span>
                 <span id="memoryOp2" class="optionBtn memoryOptions" onclick="memoryOptionClicked('memoryOp2'), memoryOption2()">
                     <p>4.56TB DDR6X HyperBionic Memory</p>
-                    <p class="price">+ $90,000</p>
+                    <p id="price">+ $90,000</p>
                 </span>
                 <span id="memoryOp3" class="optionBtn memoryOptions" onclick="memoryOptionClicked('memoryOp3'), memoryOption3()">
                     <p>10.28TB DDR7 HyperBionic Memory</p>
-                    <p class="price">+ $250,000</p>
+                    <p id="price">+ $250,000</p>
                 </span>
             </span>
 
@@ -218,10 +217,10 @@
         </p>
     </section>
     <footer>
-        <p>The Government of ROP - PIS Military &reg - All Rights Reserved - Created by Pathan - V3.0</p>
+        <p>The Government of ROP - PIS Military &reg - All Rights Reserved - Created by Pathan - J&P Private Enterprises - V3.1</p>
     </footer>
-
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    <script src="purchase.js"></script>
+    <script src="javascript/purchase.js"></script>
 </body>
 </html>

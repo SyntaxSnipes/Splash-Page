@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,800;1,900&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>M-IB:08 - PIS</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/style.css">
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 
 
@@ -18,86 +16,140 @@
 <!--This is the first section-->
 <section class="top">
 <div class="logonav">
-<h3>M-IB:08</h3>
+<img src="images/jplogo.svg" class="rotate" alt="">
+<span id="NavText">
+<h3>
+   <a href="index.html"> M-IB:08</a>
+</h3>
 
-<div class="headerlinks">
-    <a href="index.html" id="flat">Home</a>
-    <a href="https://www.ispr.gov.pk/" id="flat">Homebase</a>
-    <a href="sourcecode.html" id="flat">Source Code</a>
-    <div class="dropdown">
-    <a href="#" class="dropdown-toggle">Menu</a>
-    <ul class="dropdown-menu">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="https://www.ispr.gov.pk/">Homebase</a></li>
-        <li><a href="sourcecode.html">Source Code</a></li>
-    </ul>
-    </div>
-</div>
+<!--This is the hamburger menu-->
+<label class="hamburger-menu">
+    <input type="checkbox" />
+  </label>
+  <aside class="sidebar">
+    <nav>
+        <div class=""><a href="index.html">Home</a></div>
+        <div class=""><a href="purchase.html">Buy M-IB:08</a></div>
+        <div class=""><a href="signup.html">Newsletter </a></div>
+        <div class=""><a href="https://www.ispr.gov.pk/">Homebase</a></div>
+        <div class=""><a href="sourcecode.html">Source Code</a></div>
+        <div class=""><a href="about.html">About</a></div>
+        <div class=""><a href="https://aayanpathan.com">aayanpathan.com</a></div>
+        <div class=""><a href="https://github.com/SyntaxSnipes/Splash-Page/tree/gh-pages">GitHub</a></div>
+    </nav>
+  </aside>
 </div>
 
+<!--This is the first section-->
 <div class = "firstsecmain">
-<div class = "parawall">
-    <h2>Introducing, your new personal assistant!:
-    <br><i>M-IB:08</i></h2>
-    <p>M-IB:08, the state of the art, AI Humanoid robot; designed and crafted to interact with the Homo Sapiens species. It may follow your demands, but perhaps not your protocols...
+<div class = "parawall hidden">
+    <h2 class="hidden">Introducing, your new personal assistant,</h2>
+    <i class="hidden">M-IB:08</i>
+    <p class="hidden">Introducing M-IB:08, the epitome of AI innovation, born from the collaborative genius of J&P Private Enterprises and the PIS. This remarkable humanoid robot stands as a testament to cutting-edge AI and machine learning, featuring unparalleled adaptability and a bold commitment to excellence. Its occasional divergence from established protocols adds an enticing flair, making it an irresistible catalyst for advancement and discovery in your world of innovation.
     </p>
     <a type="button" class="fbutton" href="purchase.html">Buy Now</a>
-
 </div>
 
-<img src="images/ibrahimfront.png" id="firstimg" alt="Main Picture of Muhammad Ibrahim">
+<img src="images/ibrahimfront.png" id="firstimg" class="hidden" alt="Main Picture of Muhammad Ibrahim">
 </div>
 
 </section>
-<!--This is the second section-->
+<!--This is the feature section-->
 
-<section class="sectiontwo">
-    <h3>M-IB:08's Functions</h3>
+<section class="featureSection">
+    <div class="hidden rightfreeze" id="silicon">
+        <img src="images/PIS SILICON.png" alt="">
+        <span>
+        <h3>Ultra-Fast S1 Silicon SOC</h3>
+        <p>Introducing our S1 Silicon, an engineering masterpiece, ARM-powered, exclusive SOC, etched with a groundbreaking 1nm node process, giving it an industry-leading 74 trillion transistors. This computational powerhouse boasts up to <b>228 CPU cores</b>, a GPU with upto an astonishing <b>368 GPU cores</b>.<br> What truly sets S1 apart is its unimaginable <b>17,233 core Neural-Bionic Engine</b>, accelerating AI and machine learning tasks to new heights never dreamt of. Backed by cutting-edge DDR7 Hyperbionic memory and an NVMe v2 Gen XII Pro SSD, the S1 SOC is the heart of M-IB:08, enabling customers to experience AGI in an unparalled, dyanmic, and responsive way.</p>
+        </span>
+    </div>
+    <div class="hidden leftfreeze" id="motors">
+        <img src="images/IbrahWorkout.jpg" alt="">
+        <span>
+        <h3>Military Grade, Ultra-Strong Steel Servo Motors</h3>
+        <p>M-IB:08 is the epitome of sports prowess and robotic engineering excellence. With unparalleled physical capabilities. Equipped with <b>military-grade, steel servo motors</b>, capable of astonishing feats of <b>tensile strength</b>, endurance and durability. M-IB:08 can effortlessly carry up to a staggering, <b>4 tonnes</b> of weight, defying physics. It's extreme servos give M-IB:08 a insane sprint speed of <b>462 km/h</b>, that puts the viscious cheetahs and eagles to shame. M-IB:08 is not just a robot; it's a <b>symbol of innovation</b>, pushing the limits of what's possible in physics and showcasing the incredible potential of <b>human-machine collaboration</b>.</p>
+        </span>
+    </div>
+    <div class="hidden rightfreeze" id="driving">
+        <img src="images/IbrahPolestarInside.jpg" alt="">
+        <span>
+        <h3>Bulit in, Full Self Driving Mode</h3>
+        <p>M-IB:08 is an automotive <b>paradigm shift</b>, revolutionizing transportation with its unparalleled full self-driving prowess. Leveraging <b>state-of-the-art AI algorithms</b>, <b>advanced neural networks</b>, and <b>cutting-edge sensor fusion technology</b>, M-IB effortlessly assumes control of every conceivable vehicle archetype, rendering conventional driving <b>obsolete</b>. From <b>high-performance electric hypercars to rugged, gas-guzzling off-road titans</b>, M-IB:08's adaptive acumen remains unchallenged, heralding an era of <b>secure, efficient, and environmentally-conscious</b> mobility. Bid adieu to the steering wheel and embark on the future of transportation, with M-IB:08 as the <b>vanguard of the automotive renaissance</b>. You will never find yourself driving ever again.</p>
+        </span>
+    </div>
+</section>
+<!--This is the function section-->
+<section class="functionSection">
+    <h3 class="hidden">M-IB:08's Functions</h3>
     <div class="sectwocontent">
-        <div id="overlaypic">
-            <img src="images/gcpicibrah.png" alt="Ibrahim's Group Picture" id="gc">
-            <span id = sidepair>
+        <div id="overlaypic" class="hidden">
+            <span id = "sidepair" class = "leftfreeze">
                 <img src="images/ibrahside.png" alt="Ibrahim's Side picture" id="side">
-                <p>M-IB:08 pairing and conversing with his customers</p>
+                <p class="leftfreeze">M-IB:08 pairing and conversing with his customers</p>
             </span>
-            <span id = ponderpair>
-                <img src="images/ibrahpondering.jpg" alt="Ibrahim Pondering" id="ponder">
-                <p>M-IB:08 leveraging advanced neural network processing</p>
+
+            <span id = ponderpair class="rightfreeze">
+                <img src="images/ibrahpondering.jpg" class="rightfreeze" alt="Ibrahim Pondering" id="ponder">
+                <p class="rightfreeze">M-IB:08 leveraging advanced neural network processing</p>
             </span>
         </div>
         <ul class = "funclist" >
-            <li><a>M-IB:08 is much more advanced than ChatGPT!!!</a></li>
-            <li><a>M-IB:08 possesses a strong understanding of GCSE Subject Specifications</a></li>
-            <li><a>M-IB:08 can extensively handle Emotional Damage.</a></li>
-            <li><a>M-IB:08 excels in sports and activities, posing great competition</a></li>
-            <li><a>M-IB:08 is a natural teacher, and can help you with any quarrels or mishaps</a></li>
-            <li><a>M-IB:08 is a good listener, and will extrapolate everything you need to let out</a></li>
-            <li><a>M-IB:08 is a class rizzler, able to both figuratively and magnetically attract both humans and robots alike</a></li>
-            <li><a>M-IB:08 can consume a plethora of human food (including Apple Cores)</a></li>
+            <li class="hidden rightfreeze"><a>M-IB:08 is much more advanced than ChatGPT!!!</a></li>
+            <li class="hidden rightfreeze"><a>M-IB:08 possesses a strong understanding of GCSE Subject Specifications</a></li>
+            <li class="hidden rightfreeze"><a>M-IB:08 can extensively handle Emotional Damage.</a></li>
+            <li class="hidden rightfreeze"><a>M-IB:08 excels in sports and activities, posing great competition</a></li>
+            <li class="hidden rightfreeze"><a>M-IB:08 is a natural teacher, and can help you with any quarrels or mishaps</a></li>
+            <li class="hidden rightfreeze"><a>M-IB:08 is a good listener, and will extrapolate everything you need to let out</a></li>
+            <li class="hidden rightfreeze"><a>M-IB:08 is a class rizzler, able to both figuratively and magnetically attract both humans and robots alike</a></li>
+            <li class="hidden rightfreeze"><a>M-IB:08 can consume a plethora of human food (including Apple Cores)</a></li>
         </ul>
     </div>
 </section>
 
-<section class="sectionthree">
+<!--This is the mainquote section-->
+<section class="mainQuoteSection">
     
     <div class="sectthreecontent">
-        <h4 class="quote">"Don't forget, it's all about efficiency; and size is just a minor factor, just ask Muhammad Ibrah"</h4>
-        <h6 class="quoteauthor">- Drish Sanjay Bhatia, <br><i>An executive partner of the PIS</i></h6>
+        <h4 class="quote hidden rightfreeze">"Don't forget, it's all about efficiency; and size is just a minor factor, just ask M-IB:08"</h4>
+        <h6 class="quoteauthor hidden leftfreeze">- Drish Sanjay Bhatia, <br><i>PIS Chairman and Member of J&P Private Enterprises Board of Advisors</i></h6>
     </div>
 </section>
-<section class="quotetitles">
-<h1>Here's what owners have said about their M-IB:08:</h1>
+<section class="reviewsection">
+<div id="pfp"><img src="images/jplogo.svg" alt=""></div>
+<h1 class="hidden">PIS M-IB:08 Customers</h1>
+<div class="separator"></div>
 <div class="reviewsection">
-    <section id="r1"><h3>"M-IB:08 is always willing to help in all circumstances while trying to solve complex problems in maths”</h3><p>-Prisha Mehta</p></section>
-    <section id="r2"><h3>"M-IB:08 is very efficient and helps in any academic issues. He is definitely worth the price"</h3><p>-Pritika Bhalla</p></section>
-    <section id="r3"><h3>"M-IB:08 has the moral compass of an Angel yet the intelligence of an elephant"</h3><p>-Rayan Akmal</p></section>
-    <section id="r4"><h3>"M-IB:08 was programmed very well to be helpful, intelligent and most importantly patient"</h3><p>-Yusuf Alaswadi</p></section>
-    <section id="r5"><h3>"M-IB:08 is a very intelligent machine, he is always willing to help others around him which makes him a very kind hearted robot!"</h3><p>-Haya AlMarri</p></section>
-    <section id="r6"><h3>"M-IB:08 is a friendly robot with low maintenance, he is also very intelligent and will solve math problems in a blink of an eye"</h3><p>-Rehan Salmani</p></section>
+    <p class="dt">Sat, Apr 20 2069 at 4:20AM</p>
+    <div class="hidden rightfreeze " id="r1">
+        <h3>"M-IB:08 is a friendly robot with low maintenance, he is also very intelligent and will solve math problems in a blink of an eye"</h3><p>Rehan Salmani</p>
+    </div>
+    <div class="hidden leftfreeze " id="r2">
+        <h3>"M-IB:08 is very efficient and helps in any academic issues. He is definitely worth the price"</h3>
+        <p>Pritika Bhalla</p>
+    </div>
+    <div class="hidden rightfreeze " id="r3">
+        <h3>"M-IB:08 has the moral compass of an Angel yet the intelligence of an elephant"</h3>
+        <p>Rayan Akmal</p>
+    </div>
+    <div class="hidden leftfreeze " id="r4">
+        <h3>"The world is a better place when there is M-IB:08"</h3>
+        <p>Aryan Sardeshpande</p>
+    </div>
+    <div class="hidden rightfreeze " id="r5">
+        <h3>"M-IB:08 is a very intelligent machine, he is always willing to help others around him which makes him a very kind hearted robot!"</h3>
+        <p>Haya AlMarri</p>
+    </div>
+    <div class="hidden leftfreeze " id="r6">
+        <h3>"M-IB:08 was programmed very well to be helpful, intelligent and most importantly patient"</h3>
+        <p>Yusuf Alaswadi</p>
+    </div>
+    
 </div>
 </section>
-<section class = "sectionfour">
-    <div class="ctabut">
+<!--This is the call to action section-->
+<section class = "ctaSection">
+    <div class="ctabut hidden">
         <div class="cta">
             <h5>What are you waiting for?!</h5>
             <p>Sign up for the PIS M-IB Newsletter for the latest development news on the M-IB project, and get special offers up to 20% off M-IB Accessories</p>
@@ -107,8 +159,12 @@
 </section>
 
 <footer>
-    <p>The Government of ROP - PIS Military &reg - All Rights Reserved - Created by Pathan - V3.0</p>
+    <p>The Government of ROP - PIS Military &reg - All Rights Reserved - Created by Pathan - J&P Private Enterprises - V3.1</p>
 </footer>
-<style src = "index.js"></style>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="/javascript/index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+
 </body>
 </html>
