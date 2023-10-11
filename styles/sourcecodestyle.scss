@@ -1,34 +1,33 @@
 @font-face {
   font-family: SFMedium;
-  src: url(/fonts/SFPRODISPLAYMEDIUM.OTF);
+  src: url(./fonts/SFPRODISPLAYMEDIUM.OTF) format("opentype");
 }
 @font-face {
 font-family: SFItalicHeavy;
-src: url(/fonts/SFPRODISPLAYHEAVYITALIC.OTF);
+src: url(./fonts/SFPRODISPLAYHEAVYITALIC.OTF) format("opentype");
 }
 @font-face {
 font-family: SFBold;
-src: url(/fonts/SFPRODISPLAYBOLD.OTF);
+src: url(./fonts/SFPRODISPLAYBOLD.OTF) format("opentype");
 }
 @font-face {
 font-family: SFItalicLight;
-src: url(/fonts/SFPRODISPLAYLIGHTITALIC.OTF);
+src: url(./fonts/SFPRODISPLAYLIGHTITALIC.OTF) format("opentype");
 }
 @font-face {
 font-family: SFRegular;
-src: url(/fonts/SFPRODISPLAYREGULAR.OTF);
+src: url(./fonts/SFPRODISPLAYREGULAR.OTF) format("opentype");
 }
 
 @font-face {
 font-family: SFUltraLightItalic;
-src: url(/fonts/SFPRODISPLAYULTRALIGHTITALIC.OTF);
+src: url(./fonts/SFPRODISPLAYULTRALIGHTITALIC.OTF) format("opentype");
 }
 
 @font-face {
 font-family: SFThinItalic;
-src: url(/fonts/SFPRODISPLAYTHINITALIC.OTF);
+src: url(./fonts/SFPRODISPLAYTHINITALIC.OTF) format("opentype");
 }
-  
   
   
 :root{
