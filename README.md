@@ -5,9 +5,9 @@ Welcome to the M-IB Splash Page, a website crafted with HTML, SCSS, and JS,  rev
 The primary purpose of this website is purely comedic. It's a light-hearted and satirical splash-page centered around the idea of advertising my accomplice as a purchaseable AI robot. Please keep in mind that this site is meant for entertainment and humor, and it has no legitimate affiliation with any organization or group.
 
 ## Technologies Used 🚀
-HTML
-CSS/SCSS
-JS
+HTML,
+CSS/SCSS,
+JS,
 jQuery
 
 ## How to View 👀
