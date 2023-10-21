@@ -372,6 +372,8 @@ input {
         color: #e5e7eb;
         padding-left: 5%;
         animation: revealText 2.2s ease-out;
+        font-style: unset;
+        font-weight: unset;
         z-index: 99;
   
         h2 {
@@ -380,6 +382,7 @@ input {
           padding-bottom: 1%;
           margin: 0;
           animation: revealText 1s ease-out;
+          font-style: unset;
           font-weight: unset;
           z-index: 99;
         }
@@ -390,6 +393,8 @@ input {
           margin: 0;
           padding-bottom: 1.5%;
           font-family: SFItalicHeavy;
+          font-style: unset;
+          font-weight: unset;
           animation: revealText 1.8s ease-out;
           z-index: 99;
         }
@@ -467,6 +472,8 @@ input {
   
         .parawall h2 {
           font-size: 1.7em;
+          font-style: unset;
+          font-weight: unset;
         }
       }
   
@@ -478,6 +485,8 @@ input {
             h2 {
               font-size: 1.85em;
               color: #1f2937;
+              font-style: unset;
+              font-weight: unset;
             }
       
       
@@ -485,6 +494,8 @@ input {
               font-size: 3.5rem;
               color: #1f2937;
               padding-bottom: 3.5%;
+              font-style: unset;
+              font-weight: unset;
             }
       
             p {
@@ -754,6 +765,7 @@ input {
       font-weight: unset;
       font-family: SFBold;
       z-index: 2;
+      
     }
   }
 
@@ -896,6 +908,10 @@ input {
     }
     p{
       font-size: 0.7rem;
+    }
+    b{
+      font-style: unset;
+      font-weight: unset;
     }
     #silicon, #motors, #driving{
       display: flex;
